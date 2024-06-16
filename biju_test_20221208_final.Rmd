@@ -1,0 +1,55 @@
+---
+title: "R Notebook"
+output: html_notebook
+bibliography: references.bib
+csl: vancouver.csl
+---
+
+# This is the RMarkdown excercise
+
+# Load packages
+
+loading package
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(here)
+library(tidyverse)
+library(gtsummary)
+```
+
+# load data
+
+loading data from MAA package[@2015i]
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+df <- MASS::birthwt
+```
+
+# Add table
+
+relationship between lwt and smoke[@2020ec]
+
+
+#  A more elegant way of using RMarkdown
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+table1 <- read_rds(here("test", "table1.rds"))
+
+table1
+```
+
+
+# Add Graphics
+
+
+
+# More elegant
+
+```{r echo=FALSE}
+graph1 <- read_rds(here("test", "graph1.rds"))
+
+graph1
+```
+
+
+# References

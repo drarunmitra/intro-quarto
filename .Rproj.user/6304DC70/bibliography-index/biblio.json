@@ -1,0 +1,390 @@
+{
+    "sources": [
+        {
+            "DOI": "10.1371/journal.pone.0239026",
+            "ISSN": "1932-6203",
+            "abstract": "The Government of India in-network with the state governments has implemented the epidemic curtailment strategies inclusive of case-isolation, quarantine and lockdown in response to ongoing novel coronavirus (COVID-19) outbreak. In this manuscript, we attempt to estimate the impact of these steps across ten selected Indian states using crowd-sourced data. The trajectory of the outbreak was parameterized by the reproduction number (R0), doubling time, and growth rate. These parameters were estimated at two time-periods after the enforcement of the lockdown on 24th March 2020, i.e. 15 days into lockdown and 30 days into lockdown. The authors used a crowd sourced database which is available in the public domain. After preparing the data for analysis, R0 was estimated using maximum likelihood (ML) method which is based on the expectation minimum algorithm where the distribution probability of secondary cases is maximized using the serial interval discretization. The doubling time and growth rate were estimated by the natural log transformation of the exponential growth equation. The overall analysis shows decreasing trends in time-varying reproduction numbers (R(t)) and growth rate (with a few exceptions) and increasing trends in doubling time. The curtailment strategies employed by the Indian government seem to be effective in reducing the transmission parameters of the COVID-19 epidemic. The estimated R(t) are still above the threshold of 1, and the resultant absolute case numbers show an increase with time. Future curtailment and mitigation strategies thus may take into account these findings while formulating further course of action.",
+            "author": [
+                {
+                    "family": "Mitra",
+                    "given": "Arun"
+                },
+                {
+                    "family": "Pakhare",
+                    "given": "Abhijit P."
+                },
+                {
+                    "family": "Roy",
+                    "given": "Adrija"
+                },
+                {
+                    "family": "Joshi",
+                    "given": "Ankur"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "id": "mitra2020po",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        9
+                    ]
+                ]
+            },
+            "keyword": "COVID 19,Epidemiological statistics,Epidemiology,India,Population density,Probability distribution,Public and occupational health,SCI Indexed,Virus testing",
+            "language": "en-US",
+            "page": "e0239026",
+            "publisher": "Public Library of Science",
+            "title": "Impact of COVID-19 epidemic curtailment strategies in selected Indian states: An analysis by reproduction number and doubling time with incidence modelling",
+            "title-short": "Impact of COVID-19 epidemic curtailment strategies in selected Indian states",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0239026",
+            "ISSN": "1932-6203",
+            "abstract": "The Government of India in-network with the state governments has implemented the epidemic curtailment strategies inclusive of case-isolation, quarantine and lockdown in response to ongoing novel coronavirus (COVID-19) outbreak. In this manuscript, we attempt to estimate the impact of these steps across ten selected Indian states using crowd-sourced data. The trajectory of the outbreak was parameterized by the reproduction number (R0), doubling time, and growth rate. These parameters were estimated at two time-periods after the enforcement of the lockdown on 24th March 2020, i.e. 15 days into lockdown and 30 days into lockdown. The authors used a crowd sourced database which is available in the public domain. After preparing the data for analysis, R0 was estimated using maximum likelihood (ML) method which is based on the expectation minimum algorithm where the distribution probability of secondary cases is maximized using the serial interval discretization. The doubling time and growth rate were estimated by the natural log transformation of the exponential growth equation. The overall analysis shows decreasing trends in time-varying reproduction numbers (R(t)) and growth rate (with a few exceptions) and increasing trends in doubling time. The curtailment strategies employed by the Indian government seem to be effective in reducing the transmission parameters of the COVID-19 epidemic. The estimated R(t) are still above the threshold of 1, and the resultant absolute case numbers show an increase with time. Future curtailment and mitigation strategies thus may take into account these findings while formulating further course of action.",
+            "author": [
+                {
+                    "family": "Mitra",
+                    "given": "Arun"
+                },
+                {
+                    "family": "Pakhare",
+                    "given": "Abhijit P."
+                },
+                {
+                    "family": "Roy",
+                    "given": "Adrija"
+                },
+                {
+                    "family": "Joshi",
+                    "given": "Ankur"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "id": "mitra2020po",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        9
+                    ]
+                ]
+            },
+            "keyword": "COVID 19,Epidemiological statistics,Epidemiology,India,Population density,Probability distribution,Public and occupational health,SCI Indexed,Virus testing",
+            "language": "en-US",
+            "page": "e0239026",
+            "publisher": "Public Library of Science",
+            "title": "Impact of COVID-19 epidemic curtailment strategies in selected Indian states: An analysis by reproduction number and doubling time with incidence modelling",
+            "title-short": "Impact of COVID-19 epidemic curtailment strategies in selected Indian states",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1038/nature11234",
+            "ISSN": "0028-0836",
+            "PMCID": "PMC3564958",
+            "PMID": "22699609",
+            "abstract": "Studies of the human microbiome have revealed that even healthy individuals differ remarkably in the microbes that occupy habitats such as the gut, skin, and vagina. Much of this diversity remains unexplained, although diet, environment, host genetics, and early microbial exposure have all been implicated. Accordingly, to characterize the ecology of human-associated microbial communities, the Human Microbiome Project has analyzed the largest cohort and set of distinct, clinically relevant body habitats to date. We found the diversity and abundance of each habitat’s signature microbes to vary widely even among healthy subjects, with strong niche specialization both within and among individuals. The project encountered an estimated 81% of the genera, enzyme families, and community configurations occupied by the healthy Western microbiome. Metagenomic carriage of metabolic pathways was stable among individuals despite variation in community structure, and ethnic/racial background proved to be one of the strongest associations of both pathways and microbes with clinical metadata. These results thus delineate the range of structural and functional configurations normal in the microbial communities of a healthy population, enabling future characterization of the epidemiology, ecology, and translational applications of the human microbiome.",
+            "container-title": "Nature",
+            "id": "2012n",
+            "issue": "7402",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        6
+                    ]
+                ]
+            },
+            "page": "207-214",
+            "title": "Structure, Function and Diversity of the Healthy Human Microbiome",
+            "type": "article-journal",
+            "volume": "486"
+        },
+        {
+            "DOI": "10.1038/nature11234",
+            "ISSN": "0028-0836",
+            "PMCID": "PMC3564958",
+            "PMID": "22699609",
+            "abstract": "Studies of the human microbiome have revealed that even healthy individuals differ remarkably in the microbes that occupy habitats such as the gut, skin, and vagina. Much of this diversity remains unexplained, although diet, environment, host genetics, and early microbial exposure have all been implicated. Accordingly, to characterize the ecology of human-associated microbial communities, the Human Microbiome Project has analyzed the largest cohort and set of distinct, clinically relevant body habitats to date. We found the diversity and abundance of each habitat’s signature microbes to vary widely even among healthy subjects, with strong niche specialization both within and among individuals. The project encountered an estimated 81% of the genera, enzyme families, and community configurations occupied by the healthy Western microbiome. Metagenomic carriage of metabolic pathways was stable among individuals despite variation in community structure, and ethnic/racial background proved to be one of the strongest associations of both pathways and microbes with clinical metadata. These results thus delineate the range of structural and functional configurations normal in the microbial communities of a healthy population, enabling future characterization of the epidemiology, ecology, and translational applications of the human microbiome.",
+            "container-title": "Nature",
+            "id": "2012n",
+            "issue": "7402",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        6
+                    ]
+                ]
+            },
+            "page": "207-214",
+            "title": "Structure, Function and Diversity of the Healthy Human Microbiome",
+            "type": "article-journal",
+            "volume": "486"
+        },
+        {
+            "abstract": "Public health problems don’t exist in silos and neither do their solutions nor their outcomes. We have plenty of evidence to demonstrate the links between unhealthy environments, unhealthy people and unhealthy economies.",
+            "container-title": "IHP",
+            "id": "2015i",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        9
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "https://www.internationalhealthpolicies.org/blogs/think-big-data-data-science-as-part-of-the-public-health-researchers-toolkit/",
+            "title": "Think Big Data: Data Science as part of the public health researcher’s toolkit",
+            "title-short": "Think Big Data",
+            "type": ""
+        },
+        {
+            "abstract": "The first comprehensive estimates of disease burden due to child and maternal malnutrition and the trends of its indicators in every state of India from 1990 was published on September 18, 2019 in The Lancet Child & Adolescent Health by the India State-Level Disease Burden Initiative. The state-specific findings described in this scientific paper highlight […]",
+            "id": "2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        9
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "https://phfi.org/malnutrition-india-state-level-burden/",
+            "title": "Malnutrition India State-Level Burden - Public Health Foundation of India",
+            "type": ""
+        },
+        {
+            "abstract": "Read Article Odisha has had a history of facing natural disasters and hence the administration is well-equipped to handle such disasters through SOPs. Covid-19, however, is a unique challenge  it affects human beings only, leaving all physical infrastructure untouched. “This is a first for the state and the world in general. We are evolving […]",
+            "container-title": "Express Computer",
+            "id": "2020ec",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        5
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "title": "Odisha fights Covid-19 with advance tech tools, planning and effective execution",
+            "type": ""
+        },
+        {
+            "abstract": "Data visualization is the presentation of your data analysis in a pictorial or graphical format. Its goal is to communicate information clearly and efficiently to users and enable decision-makers so they can grasp difficult concepts. It’s about techniques and forms of art as much as tools and frameworks/languages. The goal...",
+            "container-title": "Open Data Science - Your News Source for AI, Machine Learning & more",
+            "id": "2020ods-ynsfaml&m",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        4
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "title": "Data Visualization and Dashboards in the Era of Covid-19",
+            "type": ""
+        },
+        {
+            "URL": "https://arxiv.org/abs/2102.00497",
+            "abstract": "The COVID-19 outbreak has posed an unprecedented challenge to humanity and science. On the one side, public and private incentives have been put in place to promptly allocate resources toward research areas strictly related to the COVID-19 emergency. But on the flip side, research in many fields not directly related to the pandemic has lagged behind. In this paper, we assess the impact of COVID-19 on world scientific production in the life sciences. We investigate how the usage of medical subject headings (MeSH) has changed following the outbreak. We estimate through a difference-in-differences approach the impact of COVID-19 on scientific production through PubMed. We find that COVID-related research topics have risen to prominence, displaced clinical publications, diverted funds away from research areas not directly related to COVID-19 and that the number of publications on clinical trials in unrelated fields has contracted. Our results call for urgent targeted policy interventions to reactivate biomedical research in areas that have been neglected by the COVID-19 emergency.",
+            "annote": "ZSCC: 0000001",
+            "author": [
+                {
+                    "family": "Riccaboni",
+                    "given": "Massimo"
+                },
+                {
+                    "family": "Verginer",
+                    "given": "Luca"
+                }
+            ],
+            "container-title": "arXiv:2102.00497 [econ, q-fin]",
+            "id": "riccaboni2021aeq",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        1
+                    ]
+                ]
+            },
+            "keyword": "Economics - General Economics",
+            "title": "The Impact of the COVID-19 Pandemic on Scientific Research in the Life Sciences",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0239026",
+            "ISSN": "1932-6203",
+            "abstract": "The Government of India in-network with the state governments has implemented the epidemic curtailment strategies inclusive of case-isolation, quarantine and lockdown in response to ongoing novel coronavirus (COVID-19) outbreak. In this manuscript, we attempt to estimate the impact of these steps across ten selected Indian states using crowd-sourced data. The trajectory of the outbreak was parameterized by the reproduction number (R0), doubling time, and growth rate. These parameters were estimated at two time-periods after the enforcement of the lockdown on 24th March 2020, i.e. 15 days into lockdown and 30 days into lockdown. The authors used a crowd sourced database which is available in the public domain. After preparing the data for analysis, R0 was estimated using maximum likelihood (ML) method which is based on the expectation minimum algorithm where the distribution probability of secondary cases is maximized using the serial interval discretization. The doubling time and growth rate were estimated by the natural log transformation of the exponential growth equation. The overall analysis shows decreasing trends in time-varying reproduction numbers (R(t)) and growth rate (with a few exceptions) and increasing trends in doubling time. The curtailment strategies employed by the Indian government seem to be effective in reducing the transmission parameters of the COVID-19 epidemic. The estimated R(t) are still above the threshold of 1, and the resultant absolute case numbers show an increase with time. Future curtailment and mitigation strategies thus may take into account these findings while formulating further course of action.",
+            "author": [
+                {
+                    "family": "Mitra",
+                    "given": "Arun"
+                },
+                {
+                    "family": "Pakhare",
+                    "given": "Abhijit P."
+                },
+                {
+                    "family": "Roy",
+                    "given": "Adrija"
+                },
+                {
+                    "family": "Joshi",
+                    "given": "Ankur"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "id": "mitra2020po",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        9
+                    ]
+                ]
+            },
+            "keyword": "COVID 19,Epidemiological statistics,Epidemiology,India,Population density,Probability distribution,Public and occupational health,SCI Indexed,Virus testing",
+            "language": "en-US",
+            "page": "e0239026",
+            "publisher": "Public Library of Science",
+            "title": "Impact of COVID-19 epidemic curtailment strategies in selected Indian states: An analysis by reproduction number and doubling time with incidence modelling",
+            "title-short": "Impact of COVID-19 epidemic curtailment strategies in selected Indian states",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0239026",
+            "ISSN": "1932-6203",
+            "abstract": "The Government of India in-network with the state governments has implemented the epidemic curtailment strategies inclusive of case-isolation, quarantine and lockdown in response to ongoing novel coronavirus (COVID-19) outbreak. In this manuscript, we attempt to estimate the impact of these steps across ten selected Indian states using crowd-sourced data. The trajectory of the outbreak was parameterized by the reproduction number (R0), doubling time, and growth rate. These parameters were estimated at two time-periods after the enforcement of the lockdown on 24th March 2020, i.e. 15 days into lockdown and 30 days into lockdown. The authors used a crowd sourced database which is available in the public domain. After preparing the data for analysis, R0 was estimated using maximum likelihood (ML) method which is based on the expectation minimum algorithm where the distribution probability of secondary cases is maximized using the serial interval discretization. The doubling time and growth rate were estimated by the natural log transformation of the exponential growth equation. The overall analysis shows decreasing trends in time-varying reproduction numbers (R(t)) and growth rate (with a few exceptions) and increasing trends in doubling time. The curtailment strategies employed by the Indian government seem to be effective in reducing the transmission parameters of the COVID-19 epidemic. The estimated R(t) are still above the threshold of 1, and the resultant absolute case numbers show an increase with time. Future curtailment and mitigation strategies thus may take into account these findings while formulating further course of action.",
+            "author": [
+                {
+                    "family": "Mitra",
+                    "given": "Arun"
+                },
+                {
+                    "family": "Pakhare",
+                    "given": "Abhijit P."
+                },
+                {
+                    "family": "Roy",
+                    "given": "Adrija"
+                },
+                {
+                    "family": "Joshi",
+                    "given": "Ankur"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "id": "mitra2020po",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        9
+                    ]
+                ]
+            },
+            "keyword": "COVID 19,Epidemiological statistics,Epidemiology,India,Population density,Probability distribution,Public and occupational health,SCI Indexed,Virus testing",
+            "language": "en-US",
+            "page": "e0239026",
+            "publisher": "Public Library of Science",
+            "title": "Impact of COVID-19 epidemic curtailment strategies in selected Indian states: An analysis by reproduction number and doubling time with incidence modelling",
+            "title-short": "Impact of COVID-19 epidemic curtailment strategies in selected Indian states",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.28991/HEF-2022-03-02-08",
+            "ISSN": "2785-2997",
+            "abstract": "Data analysis and visualization are essential for exploring and communicating findings in medical research, especially in epidemiological surveillance. Data on COVID-19 diagnosed cases and mortality from crowdsourced website COVID-19 India Tracker, Census 2011, and Google Mobility reports has been used to develop a real-time analytics and monitoring system for the COVID-19 outbreak in India. We have developed a dashboard application for data visualization and analysis of several indicators to follow the SARS-CoV-2 epidemic using data science techniques. A district-level tool for basic epidemiological surveillance, in an interactive and user-friendly manner, which includes time trends, epidemic curves, and key epidemiological parameters such as growth rate, doubling time, and effective reproduction number, has been estimated. This demonstrates the application of data science methods and epidemiological techniques in public health decision-making while addressing the gap of timely and reliable decision-aiding tools.   Doi: 10.28991/HEF-2022-03-02-08 Full Text: PDF",
+            "author": [
+                {
+                    "family": "Mitra",
+                    "given": "Arun"
+                },
+                {
+                    "family": "Soman",
+                    "given": "Biju"
+                },
+                {
+                    "family": "Gaitonde",
+                    "given": "Rakhal"
+                },
+                {
+                    "family": "Singh",
+                    "given": "Gurpreet"
+                },
+                {
+                    "family": "Roy",
+                    "given": "Adrija"
+                }
+            ],
+            "container-title": "Journal of Human, Earth, and Future",
+            "id": "mitra2022jhef",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        6
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "223-236",
+            "title": "Data Science Methods to Develop Decision Support Systems for Real-time Monitoring of COVID-19 Outbreak",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "abstract": "Public health problems don’t exist in silos and neither do their solutions nor their outcomes. We have plenty of evidence to demonstrate the links between unhealthy environments, unhealthy people and unhealthy economies.",
+            "container-title": "IHP",
+            "id": "2015i",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        9
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "https://www.internationalhealthpolicies.org/blogs/think-big-data-data-science-as-part-of-the-public-health-researchers-toolkit/",
+            "title": "Think Big Data: Data Science as part of the public health researcher’s toolkit",
+            "title-short": "Think Big Data",
+            "type": ""
+        },
+        {
+            "abstract": "Public health problems don’t exist in silos and neither do their solutions nor their outcomes. We have plenty of evidence to demonstrate the links between unhealthy environments, unhealthy people and unhealthy economies.",
+            "container-title": "IHP",
+            "id": "2015i",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        9
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "https://www.internationalhealthpolicies.org/blogs/think-big-data-data-science-as-part-of-the-public-health-researchers-toolkit/",
+            "title": "Think Big Data: Data Science as part of the public health researcher’s toolkit",
+            "title-short": "Think Big Data",
+            "type": ""
+        }
+    ],
+    "project_biblios": []
+}

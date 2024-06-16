@@ -1,0 +1,130 @@
+---
+title: "Inline R Code"
+author: ""
+date: "2021-12-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+
+```
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+## Load Packages
+library(tidyverse)
+library(gtsummary)
+library(here)
+
+```
+
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+# Import the Data
+
+# define file name
+file_name <- "kerala_covid_deaths.rds"
+
+# define file path
+file_path <- here::here("data", file_name)
+
+
+# read data
+df <- readRDS(file_path)
+
+df <- df %>% janitor::clean_names() 
+```
+
+
+
+
+```{r include=FALSE}
+df %>% pull(age) %>% mean(na.rm = T) %>% round(1)
+
+sex_prop_table <- df %>% count(sex) %>% mutate(prop = round(((n / sum(n))*100),2))
+
+```
+
+The total number of participants in the study were `r df %>% nrow()`.  The number of males were `r sex_prop_table %>% filter(sex == "Male") %>% pull(n)`, (`r sex_prop_table %>% filter(sex == "Male") %>%  pull(prop)`%) and females were The number of males were `r sex_prop_table %>% filter(sex == "Female") %>% pull(n)`, (`r sex_prop_table %>% filter(sex == "Female") %>%  pull(prop)`%).
+
+# Age
+
+The mean age of the study population is `r df %>% pull(age) %>% mean(na.rm = T) %>% round(1)` $\pm$ `r df %>% pull(age) %>% sd(na.rm = T) %>% round(1)` years.
+
+
+# Using GTSUMMARY package
+
+```{r include=F}
+library(gtsummary)
+library(tidyverse)
+t1 <-df %>% dplyr::select(sex) %>% tbl_summary()
+```
+
+The proportion of males in the study population is `r inline_text(t1, variable = sex, level = "Male", pattern = "{n} ({p}%)")` and for females is `r inline_text(t1, variable = sex, level = "Female", pattern = "{n} ({p}%)")`.
+
+
+### Let us make a categorical variable for age group
+
+
+```{r}
+df <- df %>% 
+  mutate(age_groups = ifelse(age >= 60, "> 60 years", "< 60 years")) %>% 
+  mutate(age_groups = factor(age_groups, levels = c("> 60 years", "< 60 years"))) %>% 
+  mutate(wave = ifelse(date_of_death >= "2021-04-01", "Second Wave", "First Wave")) %>% 
+  mutate(wave = factor(wave))
+
+```
+
+```{r}
+# Creating a logistic model
+
+## with only age_groups as the explanatory variable
+logistic_model1 <- glm(data = df, wave ~ age_groups , family = "binomial")
+
+## with only sex as the explanatory variable
+logistic_model2 <- glm(data = df, wave ~ sex, family = "binomial")
+
+## with both age_groups and sex as the explanatory variable
+logistic_model3 <- glm(data = df, wave ~ age_groups + sex, family = "binomial")
+```
+
+
+## with only age_groups as the explanatory variable
+```{r}
+tbl_regression(logistic_model1, exponentiate = T)
+```
+
+
+## with only sex as the explanatory variable
+```{r}
+tbl_regression(logistic_model2, exponentiate = T)
+```
+
+
+## with both age_groups and sex as the explanatory variable
+```{r}
+tbl_regression(logistic_model3, exponentiate = T)
+```
+
+# Let us now try to look at the districts and how they might explain the deaths
+```{r}
+# let us first decide on our reference district. For now let us assume Ernakulam as our reference district
+
+# let build our model
+
+logistic_model4 <- glm(data = df, wave ~ age_groups + sex + district, family = "binomial")
+```
+
+```{r}
+tbl_regression(logistic_model4, exponentiate = T)
+```
+
+
+
+
+
+
+
+

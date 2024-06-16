@@ -1,0 +1,5 @@
+"0","df <- df %>% mutate(age_groups = ifelse(age >= 60, ""> 60 years"", ""< 60 years"")) %>% "
+"0","  mutate(age_groups = factor(age_groups, levels = c(""> 60 years"", ""< 60 years""))) %>% "
+"0","  mutate(wave = ifelse(date_of_death >= ""2021-04-01"", ""Second Wave"", ""First Wave"")) %>% "
+"0","  mutate(wave = factor(wave))"
+"0",""

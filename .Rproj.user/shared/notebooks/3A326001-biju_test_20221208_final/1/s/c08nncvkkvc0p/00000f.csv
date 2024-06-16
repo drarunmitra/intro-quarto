@@ -1,0 +1,5 @@
+"0","table1 <- read_rds(here(""test"", ""table1.rds""))"
+"0",""
+"0","table1"
+"2","Warning: The `fmt_missing()` function is deprecated and will soon be removed
+* Use the `sub_missing()` function instead"

@@ -1,0 +1,45 @@
+---
+title: "R Notebook"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+# This is the RMarkdown excercise
+
+# Load packages
+
+```{r}
+library(here)
+library(tidyverse)
+library(gtsummary)
+```
+
+
+
+# load data
+
+
+```{r}
+df <- MASS::birthwt
+```
+
+# Add table
+
+```{r}
+df %>% 
+  select(lwt, smoke) %>% 
+  tbl_summary(
+    by = smoke
+    ) %>% 
+  add_p()
+```
+
+# Add Graphics
+
+```{r}
+df %>% 
+  select(age) %>% 
+  ggplot()+
+  geom_histogram(aes(x = age), bins = 10)
+```

@@ -1,0 +1,22 @@
+"0","# Hint: Use the janitor package for this purpose
+# Hint, Dont forget to save the data
+names(df)
+"
+"1","[1]"
+"1"," ""SL No.""                     "
+"1"," ""Date Reported""              "
+"1"," ""District""                   "
+"1","
+"
+"1","[4]"
+"1"," ""Name""                       "
+"1"," ""Place""                      "
+"1"," ""Age""                        "
+"1","
+"
+"1","[7]"
+"1"," ""Sex""                        "
+"1"," ""Date of death""              "
+"1"," ""History(Traveler / contact)"""
+"1","
+"

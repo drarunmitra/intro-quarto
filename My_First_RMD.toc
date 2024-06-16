@@ -1,0 +1,8 @@
+\contentsline {section}{Header 1}{1}{section*.2}%
+\contentsline {subsection}{Header 2}{1}{section*.3}%
+\contentsline {subsubsection}{Header 3}{1}{section*.4}%
+\contentsline {section}{How to add a figure}{2}{section*.5}%
+\contentsline {section}{How to add a table}{2}{section*.6}%
+\contentsline {section}{How to add code chunks}{2}{section*.7}%
+\contentsline {section}{Prepare a plot}{2}{section*.8}%
+\contentsline {section}{References}{4}{section*.9}%

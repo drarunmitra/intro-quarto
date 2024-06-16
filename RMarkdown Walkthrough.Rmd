@@ -1,0 +1,110 @@
+---
+title: "RMarkdown Walkthrough"
+author: "Arun Mitra"
+date: "23/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+----
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
+
+
+----
+
+
+# List Elements
+
+- item 1
+- item 2
+- item 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Lets load the packages
+
+```{r}
+library(tidyverse)
+library(labelled)
+library(gtsummary)
+
+```
+
+
+# Lets load the data
+
+```{r}
+df <- MASS::birthwt
+```
+
+
+# Lets look at the labels
+```{r}
+
+
+```
+
+low
+indicator of birth weight less than 2.5 kg.
+
+age
+mother's age in years.
+
+lwt
+mother's weight in pounds at last menstrual period.
+
+race
+mother's race (1 = white, 2 = black, 3 = other).
+
+smoke
+smoking status during pregnancy.
+
+ptl
+number of previous premature labours.
+
+ht
+history of hypertension.
+
+ui
+presence of uterine irritability.
+
+ftv
+number of physician visits during the first trimester.
+
+bwt
+birth weight in grams.

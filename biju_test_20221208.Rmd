@@ -1,0 +1,49 @@
+---
+title: "R Notebook"
+output: html_notebook
+bibliography: references.bib
+csl: vancouver.csl
+---
+
+# This is the RMarkdown excercise
+
+# Load packages
+
+loading package
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(here)
+library(tidyverse)
+library(gtsummary)
+```
+
+# load data
+
+loading data from MAA package[@2015i]
+
+```{r include=FALSE}
+df <- MASS::birthwt
+```
+
+# Add table
+
+relationship between lwt and smoke[@2020ec]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+df %>% 
+  select(lwt, smoke) %>% 
+  tbl_summary(
+    by = smoke
+    ) %>% 
+  add_p()
+```
+
+# Add Graphics
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+df %>% 
+  select(age) %>% 
+  ggplot()+
+  geom_histogram(aes(x = age), bins = 10)
+```
+# References

@@ -1,0 +1,4 @@
+"0","table1 <- read_rds(here(""test"", ""table11.rds""))"
+"2","Warning: cannot open file 'C:/Users/Arun/Dropbox/RIntro_Workshops/RIntro2022_Cohort5/sessions/RMarkDown_Session/test/table11.rds': No such file or directory"
+"2","Error in readRDS(con, refhook = refhook) : cannot open the connection
+"

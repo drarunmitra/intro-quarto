@@ -1,0 +1,4 @@
+"0","df %>% "
+"0","  select(age) %>% "
+"0","  ggplot()+"
+"0","  geom_histogram(aes(x = age), bins = 10)"

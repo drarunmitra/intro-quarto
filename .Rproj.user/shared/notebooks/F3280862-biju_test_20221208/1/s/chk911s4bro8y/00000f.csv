@@ -1,0 +1,6 @@
+"0","df %>% "
+"0","  select(lwt, smoke) %>% "
+"0","  tbl_summary("
+"0","    by = smoke"
+"0","    ) %>% "
+"0","  add_p()"

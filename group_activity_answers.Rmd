@@ -1,0 +1,304 @@
+---
+title: "RMarkdown Group Activity"
+author: "Write your Group Name"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Goal Group Activity
+
+> To apply the princples of reproducible data science methods to a given dataset.
+
+> To perform exploratory analysis including data importing, cleaning, wrangling and visualization using `tidy` methods.
+
+> To document the analysis of the given dataset and prepare a report (in HTML and Word) using RMardown.
+
+# About the Dataset
+
+The dataset contains information on the deaths due to COVID-19 in 14 districts of Kerala state. This information is available for download from the Government of Kerala COVID-19 Dashboard (<https://dashboard.kerala.gov.in/covid/>).
+
+### Variables of the dataset
+
+| Variable Name | Description                           |
+|---------------|---------------------------------------|
+| sl_no         |  Serial Number                        |
+| name          | Name of the Deceased                  |
+| age           | Age of the Deceased                   |
+| sex           | Gender of the Deceased                |
+| district      | District of Residence of the Deceased |
+| date_reported | Date of Reporting                     |
+| date_of_death | Date of Death                         |
+
+
+# Assignments
+
+## 1. Load the required packges
+
+```{r}
+# library()
+library(tidyverse)
+library(gtsummary)
+library(here)
+
+```
+
+## 2. Import the Data
+
+```{r}
+# Hint: before you import the data, you check the extension of the file. 
+# This may help you to chose between the read_csv(), read_excel, read_rds() functions
+
+df <- read_rds("kerala_covid_deaths.rds")
+```
+
+
+
+## 3. Are the names of the dataset clean? If not, clean them.
+
+```{r}
+# Hint: Use the janitor package for this purpose
+# Hint, Dont forget to save the data
+names(df)
+
+df <- df %>% janitor::clean_names()
+
+```
+
+
+## 4. Check the class and structure of the dataset
+
+```{r}
+# Hint: Hint is in the question
+
+df %>% class()
+
+df %>% str()
+
+```
+
+## 5. Remove the variables not necessary for the analysis
+
+```{r}
+# Hint: select() , see the help file at 
+# sl_no, name, place, history_traveler_contact
+
+df <- df %>% dplyr::select(!c(sl_no, name, place, history_traveler_contact))
+```
+
+
+## 6. Describing the dataset
+
+Write an R code to look at the number of rows and columns.
+
+```{r}
+# Bonus points if you are using two different ways
+
+df %>% dim()
+
+df %>% nrow()
+
+df %>% ncol()
+
+```
+
+Give quick summary of the dataset
+
+```{r}
+# Bonus points if you are using two different ways
+
+df %>% glimpse()
+
+
+df %>% skimr::skim()
+
+```
+
+
+What are the different types of variables in the dataset
+
+
+```{r}
+# What does the above output tell you?
+
+
+```
+
+Provide your answer below:
+
+<!-- Eg: there are 8 variables which are numeric, or double or charecter etc. -->
+> Answer: "character" "Date" "factor"     "numeric"  
+
+How many districts are there?
+
+```{r}
+# Bonus points if you are using two different ways 
+df %>% distinct(district)
+
+df %>% pull(district) %>% unique()
+
+```
+
+
+How many deaths occured in each district?
+
+```{r}
+# Hint: you can use the count() function
+df %>% count(district)
+
+
+```
+
+According to this dataset, when did the maximum number of deaths occur?
+
+```{r}
+df %>% count(date_reported) %>% arrange(-n)
+```
+
+
+Which are the top five districts in COVID-19 deaths?
+
+```{r}
+# Hint: arrange?
+df %>% count(district) %>% arrange(-n) %>% slice(1:5)
+```
+
+
+Is there a delay between death and reporting of death?
+
+If yes, how many days is the delay?
+
+```{r}
+# Hint: use mutate() to substract the relevant variables from each other, you can try the mean() function
+df %>% mutate(delay = date_of_death - date_reported) %>% pull(delay) %>% mean(na.rm = T)
+```
+
+Is this delay same across all the districts?
+
+```{r}
+# Hint: group_by()
+df %>% mutate(delay = date_of_death - date_reported) %>% group_by(district) %>% summarize(mean_delay = mean(delay, na.rm = T))
+```
+
+
+Create a new categorical variable representing age as a dichotomous variable
+
+```{r}
+# Hint: ifelse(), case_when()
+df <- df %>% mutate(age_group = ifelse(age <= 60, "<60 Years",">60 Years"))
+df <- df %>% mutate(age_group = case_when(age <= 60 ~ "<60 Years", TRUE ~ ">60 Years"))
+
+```
+
+
+Create a new categorical variable representing the Wave of COVID
+
+Hint: Use a cut off of 2021-04-01 
+
+```{r}
+# Hint: ifelse(), case_when()
+df <- df %>% mutate(wave = ifelse(date_of_death <= "2021-04-01",
+                            "First Wave",
+                            "Second Wave"))  
+
+
+df <- df %>% mutate(wave = case_when(date_of_death <= "2021-04-01" ~ "First Wave",
+                                     TRUE ~ "Second Wave"))
+```
+
+-------
+ASSIGNMENTS
+-------
+
+# Group A & B
+
+#### What is the mean age of the deceased?
+> Answer:
+
+
+
+#### What is the difference in the mean age between both the genders?
+> Answer:
+
+
+
+#### Forumulate a hypothesis to check the association between age and gender?
+> Answer:
+
+
+
+#### Prepare an appropriate plot to visualise this relationships.
+> Answer:
+
+
+
+#### Which statistical tests should be applied here?
+> Answer:
+
+
+
+#### Please make a summary table using gtsummary for the same?
+> Answer:
+
+
+
+#### Interpret the findings
+> Answer:
+
+
+
+
+------
+
+# Group C & D
+
+
+#### What are distribution of deaths across time?
+> Answer:
+
+
+
+
+#### Visualize mortality of COVID-19 in Kerala in different districts
+> Answer:
+
+
+
+#### Which are the high burden district? Does these districts remain the same in both the COVID waves? Comment.
+> Answer:
+
+
+
+#### Is there an association between COVID-19 deaths and the waves of COVID?
+> Answer:
+
+
+
+#### Prepare an appropriate plot to visualise this relationships.
+> Answer:
+
+
+
+#### Which statistical tests should be applied here?
+> Answer:
+
+
+
+#### Please make a summary table using gtsummary for the same?
+> Answer:
+
+
+
+#### Interpret the findings
+> Answer:
+
+
+
+
+
+-------
+# MEGA BONUS points if you use inline code to achieve this task!
+-------
